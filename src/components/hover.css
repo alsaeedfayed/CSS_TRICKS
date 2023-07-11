@@ -1,0 +1,33 @@
+.firstHover {
+    color: cyan;
+    border-color: cyan;
+    transition: color 1s , box-shadow 1s;
+    overflow: hidden;
+    z-index: 1;
+}
+.firstHover:hover {
+    color: #fff;
+    box-shadow: 0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 40px cyan,0 0 10px cyan,
+    0 0 80px cyan,
+    0 0 160px cyan;
+    transition-delay: 0s , 1s;
+}
+
+
+.firstHover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -4rem;
+    width: 0%;
+    height: 100%;
+    background: cyan;
+    transform: skew(35deg);
+    transition: 1s ease;
+    z-index: -1;
+}
+.firstHover:hover::before {
+    width: 100%;
+}
