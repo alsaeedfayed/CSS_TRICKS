@@ -20,3 +20,7 @@
     color: transparent;
     -webkit-text-stroke: 1px #0ef;
 }
+
+.btn {
+    box-shadow: 0 0 40px #56ed6f;
+}
